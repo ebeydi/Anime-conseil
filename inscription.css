@@ -1,0 +1,95 @@
+ body {
+
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            justify-content: center; 
+            align-items: center;     
+            font-family: Arial, sans-serif;
+            background-color:rgb(239, 233, 233);
+    }
+    .b{ text-align: center;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 28px;
+  color:black;
+    }
+
+    .container {
+  display: flex;
+  height: 100vh;}
+
+.inscription{
+         
+            background-repeat: no-repeat;       
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            color: white; 
+            backdrop-filter: blur(5px); 
+        }
+
+          input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: red;
+}
+
+p {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.image.left {
+  background-image: url('left.jpg');
+}
+
+.image.right {
+  background-image: url('right.jpg');
+}
+

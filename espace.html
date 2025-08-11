@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ebeydi Blog - Animes</title>
+<link rel="stylesheet" href="ok.css">
+</head>
+<body>
+
+<header>
+  <div class="logo"><a href="#">KAKASHI</a></div>
+  <nav class="menu">
+    <ul>
+      <li class="active"><a href="#accueil">Accueil</a></li>
+      <li><a href="suggestion.php">Suggestions</a></li>
+      <li><a href="chat.php">Chats</a></li>
+      <li><a href="#">A propos de nous</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="recherche">
+      <input class="recherch" type="text" placeholder="Taper ici" />
+      <button class="button">Recherche</button>
+    </div>
+  </nav>
+</header>
+
+<section id="accueil">
+  <div class="banner">
+    <img src="oki.jpg" alt="Anime Background" />
+    <div class="overlay">
+      <h2>✨ Nouveautés 2025</h2>
+      <ul>
+        <li><strong>Solo Leveling – S2</strong> (janvier 2025)</li>
+        <li><strong>Devil May Cry</strong> (avril 2025, Netflix)</li>
+        <li><strong>Demon Slayer: Infinity Castle</strong> (juillet 2025)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section id="recent">
+    <h2 class="section-title">Animes récents</h2>
+    <ul class="anime-list" id="recent-list">
+      <li><strong>Solo Leveling S2</strong> – Janvier 2025 – Action & fantasy</li>
+      <li><strong>Devil May Cry</strong> – Avril 2025 – Action urbaine</li>
+      <li><strong>Demon Slayer: Infinity Castle</strong> – Juillet 2025 – Aventure & combat</li>
+    </ul>
+  </section>
+
+  <section id="upcoming">
+    <h2 class="section-title">Animes à venir</h2>
+    <ul class="anime-list" id="upcoming-list">
+      <li><strong>Chainsaw Man: Reze Arc</strong> – Automne 2025</li>
+      <li><strong>Attack on Titan: The Last Attack</strong> – Automne 2025</li>
+      <li><strong>Jujutsu Kaisen: Hidden Inventory</strong> – Fin 2025</li>
+    </ul>
+  </section>
+
+  <button id="refresh">Actualiser les infos</button>
+</main>
+
+<script>
+  // Simulation d'une mise à jour des données (inverse les listes)
+  const recentList = document.getElementById('recent-list');
+  const upcomingList = document.getElementById('upcoming-list');
+  const refreshBtn = document.getElementById('refresh');
+
+  refreshBtn.addEventListener('click', () => {
+    const temp = recentList.innerHTML;
+    recentList.innerHTML = upcomingList.innerHTML;
+    upcomingList.innerHTML = temp;
+  });
+</script>
+
+</body>
+</html>
